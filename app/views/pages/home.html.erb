@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Homework from Ruby on Rails course</title>
+		<%= stylesheet_link_tag 'stylehome.css' %>
+	</head>
+	<body>
+		<main>
+			<h1>This is the home page! XD</h1><br>
+			<p>This is a paragraph, and below you see some image:</p>
+			<div class="photo">
+				<%= link_to image_tag("wallpaper developer.jpg", width: '55%', height: 'auto'), about_path %>
+			</div>
+			<%= link_to 'About page', about_path %>
+		</main>
+		<footer>
+			<p>Posted by: Mauricio P.</p>
+			<p>Contact: <a href="https://www.facebook.com/Mauricio.Storin?ref=bookmarks" target="blank">Facebook</a>, <a href="https://www.instagram.com/mauricio_ps/" target="balnk">Instagram</a>.</p>
+		</footer>
+	</body>
+</html>
