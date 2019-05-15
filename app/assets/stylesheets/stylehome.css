@@ -1,5 +1,4 @@
 body{
-	color: #3b3b3b;
 	width: 100%;
 	background-color: #dcdcdc;
 	font-family: sans-serif;
@@ -7,16 +6,6 @@ body{
 }
 h1{
 	
-}
-footer{
-	position: relative;
-	left: 0;
-		bottom: 0;
-		width: 100%;
-		font-family: Times-new-Roman
-}
-footer > p{
-	margin: 0 0 0 30px;
 }
 a{
 	text-decoration: none;
