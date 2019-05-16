@@ -11,21 +11,17 @@ $navbar-default-bg: black;
 	letter-spacing: -1px;
 	font-weight: bold;
 }
-
 #logo:hover {
 	color: red;
 	text-decoration: none;
-}
-.center{
+}.center{
 	text-align: center;
 }
-
 .jumbotron {
 	background-image: asset-url('ruby5.jpg');
 	background-size: cover;
 	height: 550px;
 }
-
 .jumbotron h1{
 	color: #fff;
 	text-align: center;
@@ -36,10 +32,16 @@ $navbar-default-bg: black;
 .jumbotron p{
 	color: #fff;
 }
-
 .btn-xlarge {
 	font-size: 1.7em;
 	background-color: black;
+}
+.article-actions {
+	border-top: 1px solid #eaeaea;
+	padding-top: 5px;
+}
+.description {
+	margin-top: 0;
 }
 
 footer {
