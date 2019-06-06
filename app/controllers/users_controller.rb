@@ -1,13 +1,13 @@
 class UsersController < ApplicationController
 	before_action :set_user, only: [:edit, :update, :show]
 	before_action :require_same_user, only: [:edit, :update, :destroy]
-	before_action :require_admin, only: [:destory]
+	before_action :require_admin, only: [:destroy]
 	def index
 		@users = User.paginate(page: params[:page], per_page: 5)
 	end
 
 	def new
-		@user = User.new		
+		@user = User.new
 	end
 
 	def create
@@ -18,11 +18,11 @@ class UsersController < ApplicationController
 			redirect_to user_path(@user)
 		else
 			render 'new'
-		end		
+		end
 	end
 
 	def edit
-				
+
 	end
 
 	def update
