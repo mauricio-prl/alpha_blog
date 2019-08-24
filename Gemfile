@@ -13,6 +13,8 @@ gem 'jquery-rails'
 gem 'hirb'
 gem 'pg'
 
+# Nokogiri to fix security
+gem "nokogiri", ">= 1.10.4"
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
