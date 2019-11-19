@@ -1,20 +1,19 @@
 default: &default
   adapter: postgresql
-  encoding: unicode
-  host: 172.17.0.2
-  port: 5432
-  user: postgres
-  password: 123456
+  encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV['DB_USERNAME'] || 'root' %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOST'] || '127.0.0.1' %>
 
 development:
   <<: *default
-  database: alpha_blog_development
+  database: zombie_apocalipse_development
 test:
   <<: *default
-  database: alpha_blog_test
+  database: zombie_apocalipse_test
 production:
   <<: *default
-  database: alpha_blog_production
-  username: alpha_blog
-  password: <%= ENV['ALPHA_BLOG_DATABASE_PASSWORD'] %>
+  database: zombie_apocalipse_production
+  username: zombie_apocalipse
+  password: <%= ENV['ZOMBIE_APOCALIPSE_DATABASE_PASSWORD'] %>
