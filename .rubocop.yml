@@ -21,6 +21,9 @@ Layout/MultilineOperationIndentation:
 Layout/MultilineMethodCallIndentation:
   Enabled: false
 
+Layout/AlignHash:
+  Enabled: false
+
 Metrics/AbcSize:
   Max: 26
 
