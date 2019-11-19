@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/m-pereira/alpha_blog.svg?style=svg)](https://circleci.com/gh/m-pereira/alpha_blog)
+
 # Alpha-Blog
 
 Hello everyone my name is Mauricio, and it is my first application with ruby on rails.
@@ -25,7 +27,7 @@ Or you can install postgres by asdf:
   or:
 
       $ https://github.com/m-pereira/alpha_blog.git
-      
+
 ### Run bundle to install the gems needed:
       $ bundle install
       $ rails s
