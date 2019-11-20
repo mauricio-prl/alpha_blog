@@ -20,4 +20,13 @@ RSpec.describe User, type: :model do
   describe 'secure password' do
     it { is_expected.to have_secure_password }
   end
+
+  describe 'scopes' do
+    let!(:smith) { create(:user, username: 'Smith') }
+    let!(:john) { create(:user, username: 'John', admin: true) }
+    let!(:result) { described_class.where(admin: true).pluck(:username) }
+
+    it { expect(described_class.admins.pluck(:username)).to eq(result) }
+    it { expect(described_class.admins.pluck(:username)).not_to include(smith.username) }
+  end
 end

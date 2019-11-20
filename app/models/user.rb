@@ -10,4 +10,6 @@ class User < ApplicationRecord
   has_many :articles, dependent: :destroy
 
   has_secure_password
+
+  scope :admins, -> { where(admin: true) }
 end
