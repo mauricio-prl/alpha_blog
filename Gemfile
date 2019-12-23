@@ -15,7 +15,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'nokogiri', '>= 1.10.4'
 gem 'pg'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'rails', '~> 5.2.3'
 gem 'rubocop', require: false
 gem 'sass-rails', '~> 5.0'
