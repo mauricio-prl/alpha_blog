@@ -13,7 +13,7 @@ RSpec.describe User, type: :model do
     it { is_expected.to allow_value('teste@email.com').for(:email) }
   end
 
-  describe 'hav_many' do
+  describe 'have_many' do
     it { is_expected.to have_many(:articles).dependent(:destroy) }
   end
 
